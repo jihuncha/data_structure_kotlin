@@ -150,7 +150,7 @@ fun forAndWhile() {
 
     //index와 value 함께 사용 -> withIndex
     for ((index, student) in students.withIndex()) {
-        println("test - ${index + 1} and studend - $student")
+        println("test - ${index + 1} and student - $student")
     }
 
     var sum : Int = 0
