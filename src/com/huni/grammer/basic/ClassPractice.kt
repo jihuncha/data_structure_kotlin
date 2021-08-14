@@ -39,7 +39,7 @@ open class Human (val name: String = "Anonymous") {
 // 코틀린의 클래스는 기본적으로 final 이라서 안됨
 // human class 를 open 을 해줘야함
 class Korean : Human() {
-    
+
     //그냥 하면 안됨..
     //open
     override fun singASong() {
