@@ -1,4 +1,4 @@
-package com.huni.grammer.basic
+package com.huni.grammer.joyce.basic
 
 //class practice_basic {
 //

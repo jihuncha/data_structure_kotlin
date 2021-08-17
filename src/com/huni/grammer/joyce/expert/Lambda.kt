@@ -1,4 +1,4 @@
-package com.huni.grammer.expert
+package com.huni.grammer.joyce.expert
 
 // 1. lambda
 // 람다식은 우리가 마치 value 처럼 다룰 수 있는 익명 함수 이다.

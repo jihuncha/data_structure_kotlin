@@ -1,4 +1,4 @@
-package com.huni.grammer.expert
+package com.huni.grammer.joyce.expert
 
 //data Class
 
@@ -16,7 +16,7 @@ fun main() {
 
     //data의 경우 tostring, b는 주소값이 나옴
 //    Ticket(companyName=KoreanAir, name=jihunCha, date=2020-02-10, seatNumber=14)
-//    com.huni.grammer.expert.TicketNormal@2a84aee7
+//    com.huni.grammer.joyce.expert.TicketNormal@2a84aee7
     println(ticketA)
     println(ticketB)
 
