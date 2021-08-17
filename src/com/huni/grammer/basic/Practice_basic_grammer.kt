@@ -1,4 +1,4 @@
-package com.huni.grammer
+package com.huni.grammer.basic
 
 //class practice_basic {
 //
@@ -216,7 +216,7 @@ fun ignoreNull (str: String?) {
 
     //null 이 아니라고 명시
     val mNotNull : String = str!!
-    val upper = mNotNull.uppercase()
+    val upper = mNotNull.toUpperCase()
 //    println(upper)
 
 

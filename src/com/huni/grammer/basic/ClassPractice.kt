@@ -1,4 +1,4 @@
-package com.huni.grammer
+package com.huni.grammer.basic
 
 //8. class
 //class 이름 파일이름 안맞아도됨
