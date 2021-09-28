@@ -1,4 +1,4 @@
-package com.huni.java.fastcampus.ch05;
+package com.huni.java.fastcampus.ch05_queue;
 
 import java.util.LinkedList;
 import java.util.Queue;

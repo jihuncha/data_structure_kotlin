@@ -1,7 +1,6 @@
-package com.huni.java.fastcampus.ch05;
+package com.huni.java.fastcampus.ch05_queue;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Ch05_Queue {
 //    연습해보기

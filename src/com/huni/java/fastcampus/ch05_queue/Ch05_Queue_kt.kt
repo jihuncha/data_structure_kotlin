@@ -1,4 +1,4 @@
-package com.huni.java.fastcampus.ch05
+package com.huni.java.fastcampus.ch05_queue
 
 //코틀린 표준 라이브러리인 kotlin std-lib에는 Queue가 구현되어 있는 라이브러리가 존재하지 않는다
 
