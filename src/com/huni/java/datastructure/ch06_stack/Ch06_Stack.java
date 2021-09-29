@@ -1,4 +1,4 @@
-package com.huni.java.fastcampus.ch06_stack;
+package com.huni.java.datastructure.ch06_stack;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.huni.java.fastcampus.ch04_array
+package com.huni.java.datastructure.ch04_array
 
 fun main() {
     var array = arrayOf(1,2,3)
