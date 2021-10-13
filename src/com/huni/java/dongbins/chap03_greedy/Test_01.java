@@ -1,4 +1,4 @@
-package com.huni.java.dongbins.chap01;
+package com.huni.java.dongbins.chap03_greedy;
 
 public class Test_01 {
     //거스름돈

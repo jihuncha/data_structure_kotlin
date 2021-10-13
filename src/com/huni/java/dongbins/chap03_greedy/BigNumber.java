@@ -1,7 +1,6 @@
-package com.huni.java.dongbins.chap01;
+package com.huni.java.dongbins.chap03_greedy;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.Scanner;
 
 //5 8 3
