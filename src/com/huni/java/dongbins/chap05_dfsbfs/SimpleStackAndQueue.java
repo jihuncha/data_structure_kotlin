@@ -14,7 +14,8 @@ public class SimpleStackAndQueue {
         System.out.println(myStack);
 
         myStack.pop();
-
+//        myStack.remo
+        myStack.removeElementAt(2);
         System.out.println(myStack);
 /////////////////////////////////////////////////
         Queue<Integer> myQueue = new LinkedList<>();
@@ -23,6 +24,7 @@ public class SimpleStackAndQueue {
         myQueue.offer(20);
         myQueue.offer(30);
         myQueue.offer(40);
+
 
         System.out.println(myQueue);
 
