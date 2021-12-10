@@ -1,5 +1,7 @@
 # data_structure_kotlin
 
-### kotlin basic grammer 
+### 자바 및 코틀린으로 자료구조 학습 
 
-* 파이선 튜플 -> JAVA Node 로 사용하자
+
+
+
