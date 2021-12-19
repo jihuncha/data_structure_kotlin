@@ -32,24 +32,54 @@ public class TmonTestTwo {
         int resultX = 1;
         int resultY = 1;
 
-        while (findNumber != 0) {
+        boolean upNum = false;
+
+        while (findNumber != 1) {
+//            System.out.println(findNumber);
             System.out.println(resultX + " - " + resultY);
             if (resultX == 1 && resultY == 1) {
+                System.out.println("first");
                 resultY += 1;
                 findNumber -= 1;
-                continue;
             } else if (resultX == 1) {
+                System.out.println("second");
+                if (upNum) {
+                    resultY += 1;
+                    findNumber -= 1;
+                    upNum = false;
+                    continue;
+                }
+
                 resultX += 1;
                 resultY -= 1;
-                findNumber -= 1;
-                continue;
+
+                if (resultX == 2 && resultY == 1) {
+                    upNum = true;
+                }
+
+                findNumber -=1;
             } else if (resultY == 1) {
-                resultX += 1;
-                findNumber -= 1;
+                System.out.println("third");
+                if (upNum) {
+                    resultX += 1;
+                    findNumber -= 1;
+                    upNum = false;
+                    continue;
+                }
+
+                resultX -= 1;
+                resultY += 1;
+                findNumber -=1;
                 continue;
             } else {
+                System.out.println("fourth");
                 resultY += 1;
                 resultX -= 1;
+
+                if (resultX == 1 || resultY == 1) {
+                    upNum = true;
+                }
+
                 findNumber -= 1;
                 continue;
             }

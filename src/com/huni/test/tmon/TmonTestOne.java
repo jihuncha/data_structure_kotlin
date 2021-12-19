@@ -53,15 +53,7 @@ public class TmonTestOne {
             }
         }
 
-//        System.out.println(myHash.toString());
-
         Map<String, Integer> result = sortMapByValue(myHash);
-//        for (Map.Entry<String, Integer> entry : result.entrySet()) {
-//            System.out.println("Key: " + entry.getKey() + ", "
-//                    + "Value: " + entry.getValue());
-//        }
-
-//        System.out.println(result.entrySet().);
 
         String resultString = (String)result.keySet().toArray()[0];
 
