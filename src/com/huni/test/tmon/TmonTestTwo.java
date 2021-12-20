@@ -32,58 +32,92 @@ public class TmonTestTwo {
         int resultX = 1;
         int resultY = 1;
 
-        boolean upNum = false;
+        boolean firstTime = true;
+        boolean updown = true;
 
         while (findNumber != 1) {
-//            System.out.println(findNumber);
-            System.out.println(resultX + " - " + resultY);
-            if (resultX == 1 && resultY == 1) {
-                System.out.println("first");
-                resultY += 1;
-                findNumber -= 1;
-            } else if (resultX == 1) {
-                System.out.println("second");
-                if (upNum) {
+            if (resultX == 1) {
+                if (firstTime) {
                     resultY += 1;
-                    findNumber -= 1;
-                    upNum = false;
-                    continue;
+                    firstTime = false;
+                } else {
+                    firstTime = true;
+                    updown = false;
+                    resultX +=1;
+                    resultY -=1;
                 }
-
-                resultX += 1;
-                resultY -= 1;
-
-                if (resultX == 2 && resultY == 1) {
-                    upNum = true;
-                }
-
-                findNumber -=1;
             } else if (resultY == 1) {
-                System.out.println("third");
-                if (upNum) {
+                if (firstTime) {
                     resultX += 1;
-                    findNumber -= 1;
-                    upNum = false;
-                    continue;
+                    firstTime = false;
+                } else {
+                    firstTime = true;
+                    updown = true;
+                    resultX -= 1;
+                    resultY += 1;
                 }
-
-                resultX -= 1;
-                resultY += 1;
-                findNumber -=1;
-                continue;
             } else {
-                System.out.println("fourth");
-                resultY += 1;
-                resultX -= 1;
-
-                if (resultX == 1 || resultY == 1) {
-                    upNum = true;
+                if (updown) {
+                    resultX -= 1;
+                    resultY += 1;
+                } else {
+                    resultX += 1;
+                    resultY -= 1;
                 }
-
-                findNumber -= 1;
-                continue;
             }
+            findNumber -=1;
         }
+
+//        while (findNumber != 1) {
+////            System.out.println(findNumber);
+//            System.out.println(resultX + " - " + resultY);
+//            if (resultX == 1 && resultY == 1) {
+//                System.out.println("first");
+//                resultY += 1;
+//                findNumber -= 1;
+//            } else if (resultX == 1) {
+//                System.out.println("second");
+//                if (upNum) {
+//                    resultY += 1;
+//                    findNumber -= 1;
+//                    upNum = false;
+//                    continue;
+//                }
+//
+//                resultX += 1;
+//                resultY -= 1;
+//
+//                if (resultX == 2 && resultY == 1) {
+//                    upNum = true;
+//                }
+//
+//                findNumber -=1;
+//            } else if (resultY == 1) {
+//                System.out.println("third");
+//                if (upNum) {
+//                    resultX += 1;
+//                    findNumber -= 1;
+//                    upNum = false;
+//                    continue;
+//                }
+//
+//                resultX -= 1;
+//                resultY += 1;
+//                findNumber -=1;
+//                continue;
+//            } else {
+//                System.out.println("fourth");
+//                resultY += 1;
+//                resultX -= 1;
+//
+//                if (resultX == 1 || resultY == 1) {
+//                    upNum = true;
+//                }
+//
+//                findNumber -= 1;
+//                continue;
+//            }
+//        }
 
 
         System.out.println(resultX + "-" + resultY);
